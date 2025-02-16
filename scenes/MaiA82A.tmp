@@ -24,12 +24,11 @@ position = Vector2(-43, -9)
 
 [node name="BlueShip" parent="." instance=ExtResource("2")]
 position = Vector2(72.7009, 421.901)
-mass = 10.0
+gravity_scale = 0.5
 script = ExtResource("4_ft4wn")
 
 [node name="GreenShip" parent="." instance=ExtResource("5_akjx3")]
 position = Vector2(1071, 424)
-mass = 10.0
 script = ExtResource("6_nwj6d")
 
 [node name="ObjectiveArea" type="Area2D" parent="."]

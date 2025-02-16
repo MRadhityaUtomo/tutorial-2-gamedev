@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://dolmgpsa6rqch"]
+
+[ext_resource type="Texture2D" uid="uid://cbwgix0inp3tk" path="res://assets/snow.png" id="1_h71sf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gkh40"]
+size = Vector2(70, 630)
+
+[node name="Stonewall" type="StaticBody2D"]
+
+[node name="Snow" type="Sprite2D" parent="."]
+position = Vector2(33, 28)
+texture = ExtResource("1_h71sf")
+
+[node name="Snow" type="Sprite2D" parent="Snow"]
+position = Vector2(0, 211)
+texture = ExtResource("1_h71sf")
+
+[node name="Snow2" type="Sprite2D" parent="Snow"]
+position = Vector2(0, 140)
+texture = ExtResource("1_h71sf")
+
+[node name="Snow3" type="Sprite2D" parent="Snow"]
+position = Vector2(0, 71)
+texture = ExtResource("1_h71sf")
+
+[node name="Snow4" type="Sprite2D" parent="Snow"]
+position = Vector2(0, 421)
+texture = ExtResource("1_h71sf")
+
+[node name="Snow5" type="Sprite2D" parent="Snow"]
+position = Vector2(0, 350)
+texture = ExtResource("1_h71sf")
+
+[node name="Snow6" type="Sprite2D" parent="Snow"]
+position = Vector2(0, 281)
+texture = ExtResource("1_h71sf")
+
+[node name="Snow8" type="Sprite2D" parent="Snow"]
+position = Vector2(0, 561)
+texture = ExtResource("1_h71sf")
+
+[node name="Snow9" type="Sprite2D" parent="Snow"]
+position = Vector2(0, 492)
+texture = ExtResource("1_h71sf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(33, 308)
+shape = SubResource("RectangleShape2D_gkh40")

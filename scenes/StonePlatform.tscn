@@ -3,12 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://c0do1j2bc1edf" path="res://assets/stone.png" id="1_3p1dt"]
 
 [sub_resource type="RectangleShape2D" id="2"]
-size = Vector2(70.8416, 70.5898)
+size = Vector2(1159.42, 70.5898)
 
 [node name="StonePlatform" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(584, 9)
+scale = Vector2(16.6, 1)
 texture = ExtResource("1_3p1dt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(582.29, 9)
 shape = SubResource("2")
