@@ -23,6 +23,7 @@ RigidBody2D : Physics Body atau objek yang tidak bisa digerakkan oleh dan harus 
   - Akan bereaksi kepada kolisi benda lain
   - Mempengaruhi body lain
   - Pada tutorial BlueShip dipengaruhi oleh dorongan StonePlatform
+
 StaticBody2D : Physics Body atau objek yang hanya bisa digerakkan oleh code seperti input player ketika menekan suatu tombol dan tidak bisa digerakkan oleh pengaruh body lain seperti dorongan atau gravitasi.
   - Tidak bereaksi kepada kolisi benda lain
   - Tidak mempengaruhi body lain
