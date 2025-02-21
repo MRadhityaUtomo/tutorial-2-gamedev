@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://6dul4wccp1ta"]
+
+[ext_resource type="Texture2D" uid="uid://cq5yn6ecuv8qf" path="res://assets/meteorBrown_big1.png" id="1_pyc3n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aerdb"]
+radius = 48.0416
+
+[node name="Asteroids" type="RigidBody2D"]
+mass = 1000.0
+gravity_scale = 0.0
+inertia = 100.0
+angular_velocity = 1.74533
+constant_torque = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.5, 1)
+texture = ExtResource("1_pyc3n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("CircleShape2D_aerdb")

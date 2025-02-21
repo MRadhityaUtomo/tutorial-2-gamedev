@@ -34,7 +34,8 @@ StaticBody2D : Physics Body atau objek yang hanya bisa digerakkan oleh code sepe
 
 4. Ubah nilai atribut Mass pada tipe RigidBody2D secara bebas di scene BlueShip, lalu coba jalankan scene MainLevel. Apa yang terjadi?
 
-Pada mass 100 Kg, 1 Kg, dan 0.001 Kg tidak terlalu terlihat perbedaan pengaruh atau kecepatan jatuh saat mendorong StonePlatform.
+Pada mass 100 Kg, 1 Kg, dan 0.001 Kg tidak terlalu terlihat perbedaan pengaruh atau kecepatan jatuh saat mendorong StonePlatform. Percepatan jatuh tidak berubah karena gravitasi bekerja sama pada semua massa, dan dorongan ke StonePlatform tidak menunjukkan perbedaan signifikan karena gaya dorong BlueShip tetap (dibantu hukum newton kedua).
+Jika ingin perubahan terlihat harus diubah damping, gravity scale, dll.
 
 5. Ubah nilai atribut Disabled pada tipe CollisionShape2D di scene StonePlatform, lalu coba jalankan scene MainLevel. Apa yang terjadi?
 
@@ -54,4 +55,4 @@ Changes:
 - Added controls to space ship 
 - Added a player 2 with alternate controls
 - Added new objectives for each player
-    - Green needs to go to the left zone while Blue goes right
+	- Green needs to go to the left zone while Blue goes right

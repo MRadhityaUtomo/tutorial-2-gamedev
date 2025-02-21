@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cdoksexcakmop"]
+[gd_scene load_steps=14 format=3 uid="uid://cdoksexcakmop"]
 
 [ext_resource type="PackedScene" uid="uid://y5a4e3ajuy2r" path="res://scenes/StonePlatform.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://datfp8kxjrjg" path="res://scenes/BlueShip.tscn" id="2"]
@@ -9,6 +9,9 @@
 [ext_resource type="Script" path="res://scenes/GreenShipController.gd" id="6_nwj6d"]
 [ext_resource type="Script" path="res://scenes/objective_area_2.gd" id="7_2r4t5"]
 [ext_resource type="PackedScene" uid="uid://dolmgpsa6rqch" path="res://scenes/stonewall.tscn" id="7_pjpgv"]
+[ext_resource type="PackedScene" uid="uid://6dul4wccp1ta" path="res://scenes/Asteroids.tscn" id="10_ps5ff"]
+[ext_resource type="Texture2D" uid="uid://3ruxfsvp87ub" path="res://assets/playerShip1_green.png" id="11_evx86"]
+[ext_resource type="Texture2D" uid="uid://dgrrg14sgp4f4" path="res://assets/playerShip1_blue.png" id="12_2xv4r"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(138.75, 79)
@@ -51,6 +54,30 @@ position = Vector2(-61, 2)
 
 [node name="Stonewall2" parent="." instance=ExtResource("7_pjpgv")]
 position = Vector2(1145, -2)
+
+[node name="Asteroids" parent="." instance=ExtResource("10_ps5ff")]
+position = Vector2(329, 147)
+
+[node name="Asteroids2" parent="." instance=ExtResource("10_ps5ff")]
+position = Vector2(457, 415)
+
+[node name="Asteroids3" parent="." instance=ExtResource("10_ps5ff")]
+position = Vector2(794, 507)
+
+[node name="Asteroids4" parent="." instance=ExtResource("10_ps5ff")]
+position = Vector2(679, 255)
+
+[node name="PlayerShip1Green" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+position = Vector2(69, 45)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("11_evx86")
+
+[node name="PlayerShip1Blue" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+position = Vector2(1078, 38)
+scale = Vector2(0.446667, 0.446667)
+texture = ExtResource("12_2xv4r")
 
 [connection signal="body_entered" from="ObjectiveArea" to="ObjectiveArea" method="_on_ObjectiveArea_body_entered"]
 [connection signal="body_entered" from="ObjectiveArea2" to="ObjectiveArea2" method="_on_ObjectiveArea_body_entered"]
